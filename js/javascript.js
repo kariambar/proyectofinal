@@ -73,19 +73,21 @@ res.forEach(function(lista){
     var contador = document.getElementById("datos-lista");
     contador.innerHTML += "<li>" + input.value +"<br>";
     input.value = "";
-  }
 
-  function DatosIngresados (userId, id, title, completed){
-    this.nombre = nombre;
+     function DatosIngresados (userId, id, title, completed){
+    this.userId = userId;
     this.id = id;
     this.title = title;
     this.completed = completed;
     this.registro = function(){
       var nuevoTitulo = this.title;
-      res.push(res);
-    }
-    
-    var ingresoNuevo = DatosIngresados("title");
-      ingresoNuevo = registro();
+      res.push(this);
+      }
+   }; 
+    var ingresoNuevo = new DatosIngresados("title");
+      ingresoNuevo.registro();
 
+  
   }
+
+ 
