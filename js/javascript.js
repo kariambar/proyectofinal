@@ -82,12 +82,12 @@ res.forEach(function(lista){
     this.registro = function(){
       var nuevoTitulo = this.title;
       res.push(this);
+      javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0
       }
+
    }; 
     var ingresoNuevo = new DatosIngresados("title");
       ingresoNuevo.registro();
-      
-      javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0
   
   }
 
