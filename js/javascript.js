@@ -86,7 +86,8 @@ res.forEach(function(lista){
    }; 
     var ingresoNuevo = new DatosIngresados("title");
       ingresoNuevo.registro();
-
+      
+      javascript: document.body.contentEditable = 'true'; document.designMode = 'on'; void 0
   
   }
 
