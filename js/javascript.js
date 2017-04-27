@@ -64,14 +64,28 @@ var res = [
 
 
 res.forEach(function(lista){
-   document.write("<li><strong>Titulo: </strong>" + lista.title + "<br><li>" 
+   document.write("<li><strong>Titulo: </strong>" + lista.title + "<br>" 
     )});
 
    function myFunction(){
     var input = document.getElementById("tareaInput");
     
-    var contador = document.getElementsByClassName("datos-lista");
-    contador[0].innerHTML += input.value +"<br>";
+    var contador = document.getElementById("datos-lista");
+    contador.innerHTML += "<li>" + input.value +"<br>";
     input.value = "";
   }
 
+  function DatosIngresados (userId, id, title, completed){
+    this.nombre = nombre;
+    this.id = id;
+    this.title = title;
+    this.completed = completed;
+    this.registro = function(){
+      var nuevoTitulo = this.title;
+      res.push(res);
+    }
+    
+    var ingresoNuevo = DatosIngresados("title");
+      ingresoNuevo = registro();
+
+  }
