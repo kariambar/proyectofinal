@@ -65,13 +65,15 @@ var res = [
 
 
 res.forEach(function(lista){
-   document.write( 
-    "<div>" + 
-      "<p> id: " + lista.id + "</p>" +
-      "<p> title: " + lista.title + "</p>" + 
-    "</div>"
+   document.write("<li><strong>Titulo: </strong>" + lista.title + "<br><li>" 
     )})
 
+   function obtenerDatos(){
+    var input = document.getElementById("listaDatos").value;
+    var cont = document.getElementsByClassName("id").value;
+    cont[0].innerHTML += input.value +"<br>";
+    input.value = "";
+  }
 /*
 (function(){
   // Variables
